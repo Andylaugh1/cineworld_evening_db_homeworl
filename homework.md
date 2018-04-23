@@ -125,11 +125,79 @@ Zsolt Podoba-Szalai
     (24 rows)
 
 7. Zsolt, has decided to hijack our movie evening, Remove him from the table of people.
-    
+     DELETE FROM people WHERE name = 'Zsolt Podoba-Szalai';
+     SELECT name FROM people
+     Luis Tejero
+     Colin Tindle
+     Rachel Westwater
+     Andrew Smith
+     (22 rows)
+
+
 8. Somehow the list of people includes two people named 'Andrew'. Change these entries to the proper names ('Jeff 4', 'Jeff 5')
+    UPDATE people SET name = 'Jeff 4' WHERE name = 'Andrew Laughlin';
+    UPDATE people SET name = 'Jeff 5' WHERE name = 'Andrew Smith';
+    SELECT name FROM people;
+    Luis Tejero
+    Colin Tindle
+    Rachel Westwater
+    Zsolt Podoba-Szalai
+    Jeff 4
+    Jeff 5
+    (23 rows)
+
 9. The cinema has just heard that they will be holding an exclusive midnight showing of 'Guardians of the Galaxy 2'!! Create a new entry in the 'movies' table to reflect this.
+    INSERT INTO movies(title) VALUES ('Guardians of the Galaxy 2');
+    SELECT title FROM movies;
+    title                
+-------------------------------------
+Iron Man
+The Incredible Hulk
+Iron Man 2
+Thor
+Captain America: The First Avenger
+Avengers Assemble
+Iron Man 3
+Thor: The Dark World
+Batman Begins
+Captain America: The Winter Soldier
+Guardians of the Galaxy
+Avengers: Age of Ultron
+Ant-Man
+Captain America: Civil War
+Doctor Strange
+Guardians of the Galaxy 2
+(16 rows)
+
+
 10. The cinema would also like to make the Guardian movies a back to back feature. Update the 'Guardians of the Galaxy' show time from 18:55 to 21:30
+    UPDATE movies SET show_time = 21.30 WHERE title = 'Guardians of the Galaxy';
+    SELECT (title, show_time) FROM movies;
+    row                      
+-----------------------------------------------
+("Iron Man",19:55)
+("The Incredible Hulk",18:40)
+("Iron Man 2",21:55)
+(Thor,16:35)
+("Captain America: The First Avenger",13:25)
+("Avengers Assemble",22:05)
+("Iron Man 3",23:10)
+("Thor: The Dark World",12:25)
+("Batman Begins",14:00)
+("Captain America: The Winter Soldier",14:45)
+("Avengers: Age of Ultron",20:40)
+(Ant-Man,13:50)
+("Captain America: Civil War",21:30)
+("Doctor Strange",17:55)
+("Guardians of the Galaxy",21.30)
+(15 rows)
+
+➜  CCCinema_homework git:(master) ✗
+
+
 
 ## Extension
 
 1. Research how to delete multiple entries from your table in a single command.
+
+You could do the DELETE command using from and where, using id numbers

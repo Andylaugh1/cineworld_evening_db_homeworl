@@ -156,5 +156,14 @@ INSERT INTO attendances (person_id, movie_id) VALUES (21, 4);
 -- SELECT name FROM people;
 -- SELECT * FROM people WHERE name = 'Andrew Laughlin';
 -- DELETE FROM movies WHERE title = 'Batman Begins';
-INSERT INTO people(name) VALUES ('Sandy McMillan');
-SELECT name FROM people;
+-- INSERT INTO people(name) VALUES ('Sandy McMillan');
+-- SELECT name FROM people;
+-- DELETE FROM people WHERE name = 'Zsolt Podoba-Szalai';
+-- SELECT name FROM people
+-- UPDATE people SET name = 'Jeff 4' WHERE name = 'Andrew Laughlin';
+-- UPDATE people SET name = 'Jeff 5' WHERE name = 'Andrew Smith';
+-- SELECT name FROM people;
+-- INSERT INTO movies(title) VALUES ('Guardians of the Galaxy 2');
+-- SELECT title FROM movies;
+UPDATE movies SET show_time = 21.30 WHERE title = 'Guardians of the Galaxy';
+SELECT (title, show_time) FROM movies;
