@@ -201,3 +201,4 @@ Guardians of the Galaxy 2
 1. Research how to delete multiple entries from your table in a single command.
 
 You could do the DELETE command using from and where, using id numbers
+You could also use DELETE FROM table_name, which would delete every record in that table
