@@ -202,3 +202,7 @@ Guardians of the Galaxy 2
 
 You could do the DELETE command using from and where, using id numbers
 You could also use DELETE FROM table_name, which would delete every record in that table
+
+In this specific case you could do the following:
+DELETE FROM people WHERE name IN ('Andrew Smith', 'Andrew Laughlin');
+SELECT name FROM people

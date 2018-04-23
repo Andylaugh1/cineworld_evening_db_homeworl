@@ -165,5 +165,8 @@ INSERT INTO attendances (person_id, movie_id) VALUES (21, 4);
 -- SELECT name FROM people;
 -- INSERT INTO movies(title) VALUES ('Guardians of the Galaxy 2');
 -- SELECT title FROM movies;
-UPDATE movies SET show_time = 21.30 WHERE title = 'Guardians of the Galaxy';
-SELECT (title, show_time) FROM movies;
+-- UPDATE movies SET show_time = 21.30 WHERE title = 'Guardians of the Galaxy';
+-- SELECT (title, show_time) FROM movies;
+
+DELETE FROM people WHERE name IN ('Andrew Smith', 'Andrew Laughlin');
+SELECT name FROM people
