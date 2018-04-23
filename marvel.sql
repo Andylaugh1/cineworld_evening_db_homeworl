@@ -150,4 +150,11 @@ INSERT INTO attendances (person_id, movie_id) VALUES (5, 8);
 INSERT INTO attendances (person_id, movie_id) VALUES (1, 1);
 INSERT INTO attendances (person_id, movie_id) VALUES (21, 4);
 
-SELECT * FROM movies;
+-- SELECT * FROM movies;
+-- SELECT name FROM people;
+-- UPDATE people SET name = 'Davina Sanders' WHERE name = 'Davinda Sanders';
+-- SELECT name FROM people;
+-- SELECT * FROM people WHERE name = 'Andrew Laughlin';
+-- DELETE FROM movies WHERE title = 'Batman Begins';
+INSERT INTO people(name) VALUES ('Sandy McMillan');
+SELECT name FROM people;
